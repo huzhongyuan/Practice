@@ -1,0 +1,88 @@
+{
+	"description": "项目配置文件。",
+	"packOptions": {
+		"ignore": []
+	},
+	"setting": {
+		"urlCheck": true,
+		"es6": true,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true
+	},
+	"compileType": "miniprogram",
+	"libVersion": "2.0.9",
+	"appid": "touristappid",
+	"projectname": "%E6%96%B0%E5%BB%BA%E6%96%87%E4%BB%B6%E5%A4%B9",
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"currentL": -1,
+			"list": []
+		},
+		"miniprogram": {
+			"current": 5,
+			"list": [
+				{
+					"id": -1,
+					"name": "进行中的活动",
+					"pathName": "pages/runningPage/runningPage",
+					"query": ""
+				},
+				{
+					"id": 1,
+					"name": "活动照片",
+					"pathName": "pages/activityPhotos/activityPhotos",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "活动详情",
+					"pathName": "pages/activitiesInfo/activitiesInfo",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "报名人数",
+					"pathName": "pages/moreMenber/moreMenber",
+					"query": ""
+				},
+				{
+					"id": 4,
+					"name": "发布活动",
+					"pathName": "pages/push/push",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "个人详情",
+					"pathName": "pages/my/my",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "我发布的活动",
+					"pathName": "pages/pushed/pushed",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "报名界面",
+					"pathName": "pages/join/join",
+					"query": ""
+				}
+			]
+		}
+	}
+}

@@ -1,0 +1,12 @@
+<!--pages/join/join.wxml-->
+
+<view class='content'>
+  <view class='list'  wx:key="*this" wx:for="{{ list }}"  bindtap='toDetail' data-index=' {{ index }}'>
+    <text> {{ item.title }}</text>
+    <input value=' {{ item.value }}'></input>
+  </view>
+</view>
+
+<view class='footer'>
+  <button>提交</button>
+</view>

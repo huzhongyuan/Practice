@@ -1,0 +1,24 @@
+<!--pages/my/my.wxml-->
+<view class='header'>
+    <view class='avatarbox'>
+       <image class="avatar" bindtap='personal' src='{{userInfo.avatarUrl}}'></image>  
+    </view>
+    <view class="nickname">{{userInfo.nickName}}</view>
+    <view class='edit'>编辑个人资料</view>  
+</view>
+
+<view class='join'  bindtap='joined'>
+  <view class='joinFrist'>
+    <image class='sign' src='/images/活动01.png'></image>
+    <text>我参与的活动</text>
+  </view>
+  <image class='back' src='/images/back.png'></image>
+</view>
+
+<view class='join' bindtap='pushed'>
+  <view class='joinFrist'>
+    <image class='sign' src='/images/预约信息.png'></image>
+    <text>我发布的活动</text>
+  </view>
+  <image class='back' src='/images/back.png' ></image>
+</view>

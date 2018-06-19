@@ -1,0 +1,20 @@
+<!--pages/moreMenber/moreMenber.wxml-->
+<view class='numberAll'> {{ numberAll }}</view>
+
+<view class='content'>
+  <view class='menberBox' wx:key="*this" wx:for="{{ menberList }}"  bindtap='toDetail' data-index=' {{ index }}'> 
+    <view class='menberList' >
+    <view class='icoBox'>
+      <image src=' {{ item.ico }}'></image>
+      <text class='name'> {{ item.name }}</text>
+    </view>
+    <view class='time'> {{ item.time }}</view>
+
+  </view>
+  <view class='phone'> 
+    <text>联系电话</text>
+    <text class='phoneNumber'> {{ item.phone }}</text>
+  </view>
+  </view>
+
+</view>

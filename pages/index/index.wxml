@@ -1,0 +1,64 @@
+<!--index.wxml-->
+<!-- 头部展示 -->
+<view class='header'>
+  <image src='/images/组 17.png'></image>
+  <view class='message_box'>
+    <text class='notice'>消息通知</text>
+    <text class='message_content'>{{ message_content }}</text>
+  </view>
+</view>
+
+<!-- 内容 -->
+<view class='content'>
+
+  <!-- 进行中的项目 -->
+  <view class='running' bindtap='runningPage'>
+    <text>进行中</text>
+    <image src='/images/back.png'></image>
+  </view>
+  <view class='items' wx:key="*this" wx:for="{{ running_items }}"  bindtap='toDetail' data-index=' {{ index }}'>
+    <view class='items_photo'>
+      <image src='/images/item.png'></image>
+    </view>
+    <view class='items_content'>
+      <view class='items_title'> {{ item.items_title }}</view>
+      <view class='items_time'>
+        <image src=' {{ item.items_time.img }}'></image>
+        <text>{{ item.items_time.time }}</text>
+      </view>
+      <view class='items_addr'>
+        <image src=' {{ item.items_addr.img }}'></image>
+        <text>{{ item.items_addr.addr }}</text>
+      </view>
+    </view>
+  </view>
+
+
+  <!-- 选项卡 -->
+  <view class='swich'>
+    <text bindtap='showAll' style='color: {{ pagingColor[0] }}'>全部</text>
+    <text bindtap='showParenting' style='color: {{ pagingColor[1] }}'>亲子</text>
+    <text bindtap='showOutdoors' style='color: {{ pagingColor[2] }}'>户外</text>
+    <text bindtap='showSummerCamp' style='color: {{ pagingColor[3] }}'>夏令营</text>
+  </view>
+
+  <view class='show_items'>
+        <view class='items' wx:key="*this" wx:for="{{ show_items }}"  bindtap='toDetail' data-index=' {{ index }}'>
+    <view class='items_photo'>
+      <image src='/images/item.png'></image>
+    </view>
+    <view class='items_content'>
+      <view class='items_title'> {{ item.items_title }}</view>
+      <view class='items_time'>
+        <image src=' {{ item.items_time.img }}'></image>
+        <text>{{ item.items_time.time }}</text>
+      </view>
+      <view class='items_addr'>
+        <image src=' {{ item.items_addr.img }}'></image>
+        <text>{{ item.items_addr.addr }}</text>
+      </view>
+      <view class='menber'> {{ item.member }}</view>
+    </view>
+    </view>
+  </view>
+</view>

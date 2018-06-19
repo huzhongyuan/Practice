@@ -1,0 +1,30 @@
+<!--pages/activityPhotos/activityPhotos.wxml-->
+<view class='photoLists'  wx:key="*this" wx:for="{{ photoLists }}"  bindtap='toDetail' data-index=' {{ index }}'>
+  <view class='header'>
+    <view class='headPortrait'>
+      <image src='{{ item.headPortrait }}'></image>
+    </view>
+    <view class='personInfo'>
+      <view class='name'>{{ item.name }}</view>
+      <view class='time'>{{ item.time }}</view>
+    </view>
+  </view>
+
+  <view class='content'>
+    <view class='photos' wx:key="*this" wx:for="{{ item.photos }}"  bindtap='toDetail' data-index=' {{ index }}'>
+      <image src=' {{ item }}'></image>
+    </view>
+  </view>
+
+  <view class='footer'>
+    <view></view>
+    <view class='upload' bindtap='upload'>
+      <image src='/images/添加照片.png'> </image>
+      <text>上传</text>
+    </view>
+    <view class='click' bindtap='thumbsUp'>
+      <text> {{ item.click }}</text>
+      <image src='/images/赞.png'></image>
+    </view>
+  </view>
+</view>

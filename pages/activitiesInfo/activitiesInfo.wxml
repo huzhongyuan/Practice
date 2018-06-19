@@ -1,0 +1,76 @@
+<!--pages/activitiesInfo/activitiesInfo.wxml-->
+<view class='header'>
+  <image src='{{ activitiesInfo.poster }}'></image>
+</view>
+
+<view class='content'>
+  <!-- 标题 -->
+  <view class='title'>  
+    <view> {{ activitiesInfo.title }}</view>
+    <text> {{ activitiesInfo.label }}</text>
+  </view>
+  <!-- 时间 -->
+  <view class='time'>
+    <image src='{{ activitiesInfo.timeIco }}'></image>
+    <text> {{ activitiesInfo.time }}</text>
+  </view>
+  <!-- 地点 -->
+    <view class='addr'>
+      <image src='{{ activitiesInfo.addrIco }}'></image>
+      <text> {{ activitiesInfo.addr }}</text>
+    </view>
+  
+  <!-- 活动要求标题 -->
+  <view class='promptTitle'>{{ activitiesInfo.promptTitle }}</view>
+  <view class='promptList' wx:key="*this" wx:for="{{ activitiesInfo.promptList }}"  data-index=' {{ index }}'>
+    <view>{{ item }}</view>
+  </view>
+
+  <!-- 发布人 -->
+  <view class='authorLabel'>发布人</view>
+
+  <view class='authorBox'>
+    <view class='headPortrait'>
+      <image src='{{ activitiesInfo.headPortrait }}'></image>
+      <text> {{ activitiesInfo.author }}</text>
+    </view>
+    <view class='name'> {{ activitiesInfo.name }}</view>
+    <view class='phone'> {{ activitiesInfo.photo }}</view>
+  </view>
+
+  <!-- 参与人 -->
+    <view class='authorLabel'>参与人</view>
+
+  <view class='joinedBox'>
+    <view class='joined'>
+      <view class='join' wx:key="*this" wx:for="{{ activitiesInfo.joined }}"  bindtap='toDetail' data-index=' {{ index }}'>
+            <image src='{{ item.photo }}'></image>
+            <text> {{ item.name }}</text>
+      </view>
+    </view>
+    <view class='more' bindtap='moreMember'>
+      <image src='/images/back.png'></image>
+    </view>
+  </view>
+
+<!-- 活动照片 -->
+  <view class='photoTitle'>
+    <text>活动照片</text>
+    <view bindtap='upload'>
+      <image class='upload' src='/images/上传.png'></image>
+      <text class='uploadtext'>上传</text>
+    </view>
+  </view>
+  <view class='photoList'>
+    <view class='list'  wx:key="*this" wx:for="{{ activitiesInfo.photoList }}"  bindtap='toDetail' data-index=' {{ index }}'>
+      <image src='{{ item.photo }}'></image>
+      <text> {{ item.name }}</text>
+    </view>
+  </view>
+</view>
+
+<!-- 报名/分享 -->
+<view class='footer'>
+  <view class='share' bindtap='share'>分享</view>
+  <view class='joinning' bindtap='join'>立即报名</view>
+</view>

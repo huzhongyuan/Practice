@@ -1,0 +1,28 @@
+/* pages/push/push.wxss */
+.header image{
+  height: 160px;
+  width: 100%;
+}
+.list {
+  margin: 10px;
+  color: #333333;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  font-size: 15px;
+}
+
+.list input {
+  width: 85%;
+  text-align: right;
+  color: #cccccc;
+}
+.footer {
+  margin:  10px 0px;
+}
+.footer button{
+  background-color: #F78445;
+  width: 90%;
+  color: white;
+  border-radius: 20px;
+}

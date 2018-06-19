@@ -1,0 +1,60 @@
+/* pages/my/my.wxss */
+.header {
+  display: flex;
+  height: 200px;
+  justify-content: center;
+  flex-direction:column;
+}
+.avatar {
+width:70px;
+height:70px;
+text-align: center;
+line-height: 200px;
+font-weight: bold;
+font-size: 24px;
+background: burlywood;
+border-radius: 50%;
+}
+.avatarbox {
+  display: flex;
+  align-items:center;/*垂直居中*/
+  justify-content: center;/*水平居中*/
+}
+
+.nickname{
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items:center;/*垂直居中*/
+  justify-content: center;/*水平居中*/
+  font-size: 20px;
+}
+
+.edit {
+  display: flex;
+  justify-content: center;
+  font-size: 14px;
+  color: #333333;
+  margin: 10px;
+}
+
+.sign {
+  width: 24px;
+  height: 27px;
+  margin-right: 20px;
+}
+
+.back {
+  width: 10px;
+  height: 10px;
+}
+.join {
+  margin: 0px 20px 20px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.joinFrist {
+  display: flex;
+  align-items: center;
+}

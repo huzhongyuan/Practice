@@ -1,0 +1,108 @@
+/* pages/pushed/pushed.wxss */
+/* pages/runningPage/runningPage.wxss */
+
+.items {
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 10px;
+  margin-top: 20px;
+}
+.items_content {
+  margin-top: 5px;
+  margin-left: 10px;
+  width: 100%;
+}
+.items_photo {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.items_photo image{
+  width: 134px;
+  height: 101px;
+}
+.items_time {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+.items_time > image {
+  width: 16.5px;
+  height: 16.5px;
+}
+.items_time text {
+  color: #333333;
+  font-size: 13px;
+  margin-left: 5px;
+}
+.items_addr > image {
+  width: 15px;
+  height: 19.5px;
+}
+.items_addr {
+  display: flex;
+  align-items: center;
+    margin-top: 10px;
+}
+.items_addr text {
+  color: #333333;
+  font-size: 13px;
+    margin-left: 5px;
+}
+
+.items_title {
+  font-family:SourceHanSansCN-Regular;
+  color: #000000;
+  font-size: 16px;
+}
+.menber {
+  font-size: 12px;
+  color: #333333;
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 10px;
+  margin-right: 10px;
+}
+
+.photoBox{
+  margin-top: 10px;
+  margin-left: 10px;
+}
+.photoBox .title{
+  color: #f3a55f;
+  font-size: 14px;
+}
+
+.photo {
+  margin-top: 10px;
+  display:flex;
+  justify-content:flex-start;
+}
+.photo image {
+  display: flex;
+  width: 99px;
+  height: 74px;
+}
+.photo :not(:first-child) {
+  margin-left: 10px;
+}
+.upload {
+  width: 100%;
+  font-size: 15px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.upload text{
+  margin-right: 10%;
+  padding: 5px;
+  padding-right: 10px;
+  background-color: #F78445;
+  color: white;
+  border-radius: 20px;
+}
+
+.author {
+  font-size: 13px;
+  color: #333333;
+}

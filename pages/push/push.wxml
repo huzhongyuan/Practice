@@ -1,0 +1,15 @@
+<!--pages/push/push.wxml-->
+<view class='header'>
+  <image src='/images/组 1 拷贝.png'></image>
+</view>
+
+<view class='content'>
+  <view class='list'  wx:key="*this" wx:for="{{ list }}"  bindtap='toDetail' data-index=' {{ index }}'>
+    <text> {{ item.title }}</text>
+    <input value=' {{ item.value }}'></input>
+  </view>
+</view>
+
+<view class='footer'>
+  <button>立即上传</button>
+</view>

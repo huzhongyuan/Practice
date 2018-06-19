@@ -1,0 +1,42 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/push/push",
+    "pages/my/my",
+    "pages/runningPage/runningPage",
+    "pages/activityPhotos/activityPhotos",
+    "pages/activitiesInfo/activitiesInfo",
+    "pages/moreMenber/moreMenber",
+    "pages/pushed/pushed",
+    "pages/join/join"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#49AB0A",
+    "navigationBarTitleText": "周游团",
+    "navigationBarTextStyle":"white"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "images/首页1 (2).png",
+        "selectedIconPath": "images/首页 (2).png"
+      },
+      {
+        "pagePath": "pages/push/push",
+        "text": "发布",
+        "iconPath": "images/发布-1.png",
+        "selectedIconPath": "images/发布-11.png"
+      },
+      {
+        "pagePath": "pages/my/my",
+         "text": "我的",
+        "iconPath": "images/我的-面.png",
+        "selectedIconPath": "images/我的-面1.png"
+      }
+    ]
+  }
+}

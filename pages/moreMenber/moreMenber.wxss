@@ -1,0 +1,45 @@
+/* pages/moreMenber/moreMenber.wxss */
+.numberAll {
+  height: 40px;
+  background-color: #F5F5F5;
+  color: #333333;
+  display: flex;
+  align-items: center;
+  padding-left:10px;
+  font-size: 15px;
+}
+.content {
+  margin: 10px 10px;
+}
+.menberList {
+  display: flex;
+  justify-content: space-between;
+}
+image {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin: 10px;
+}
+.icoBox {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.time {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  color: #333333;
+}
+.phone {
+  color: #65b6e9;
+  font-size: 15px;
+  margin-left: 10px;
+}
+
+.phoneNumber {
+  color: #333333;
+  margin-left: 10px;
+}
